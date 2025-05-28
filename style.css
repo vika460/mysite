@@ -1,0 +1,179 @@
+@font-face {
+font-family: 'Bad-script';
+font-weight: 400;
+src: url('../fonts/bad-script-v16-latin_cyrillic-regular.woff2') format('woff2'),
+ url('../fonts/bad-script-v16-latin_cyrillic-regular.woff') format('woff') ;
+}
+
+
+@font-face {
+font-family: 'Open Sans';
+font-weight: 400;
+src: url('../fonts/open-sans-v29-latin_cyrillic-regular.woff2') format('woff2'),
+ url('../fonts/open-sans-v29-latin_cyrillic-regular.woff') format('woff') ;
+}
+
+@font-face {
+font-family: 'Open Sans';
+font-weight: 400;
+src: url('../fonts/open-sans-v29-latin_cyrillic-700.woff2') format('woff2'),
+ url('../fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff') ;
+}
+
+html {
+    box-sizing: border-box;
+}
+* {
+box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans';
+    background: #FFF1F3;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   
+}
+.women {
+ background-color: #FFF1F3;   
+}
+.men {
+    background-color: #ECF9FD;
+}
+button {
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+margin: 0;    
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+   max-width: 1300px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    padding: 28px 0;
+    background: #FFFFFC;
+    box-shadow: 0px 1px 20px rgb(72, 3, 38, 0.07);
+    
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__button-change {
+    width: 300px;
+    height: 65px;
+  
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    color: #FFFFFF;
+    margin-right: 30px;
+}
+.men .header__button-change {
+background-color: #1178B2;
+} 
+.women .header__button-change {
+background-color: #C300C7;
+}
+.header__button-change:last-child {
+    margin-right: 0;
+}
+.header__button-gender {
+ width: 60px;
+ height: 60px;
+box-shadow: 0px 0px 24px 4px rgb(0, 0, 0, 0.04);
+ border-radius: 10px;
+ background-color: #FFFFFC;
+border: 1px solid transparent ;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 36px;
+margin-right: 20px;
+}
+
+
+.header__button-gender_men {
+background-image: url('../image/ri_men-line.svg') ;
+}
+.header__button-gender_women {
+background-image: url('../image/ri_women-line.svg')
+}
+.men .header__button-gender_men {
+border-color: #1178B2;
+}
+.women .header__button-gender_women {
+border-color: #C300C7;
+}
+.card {
+flex-grow: 0.5;
+padding: 32px 0 15px;
+display: flex;
+align-items: center;
+}
+.card__container {
+    display: flex;
+}
+.card__wrapper {
+    position: relative;
+    margin: auto;
+    display: flex;
+    box-shadow: 0px 0px 50px rgb(96,4,50, 0.23);
+   
+}
+.card__text {
+    position: absolute;
+    left: 50%;
+    top:  50%; 
+    transform: translate(-50%, -50%);
+    font-family: 'Bad-script';
+    line-height: 1.8;
+    font-size: 20px;
+   
+   
+}
+
+
+.women .card__text {
+    font-family: 'Bad-script';
+}
+.men .card__text {
+    font-family:'Open Sans' ;
+    font-weight: 700;
+}
+
+.footer {
+    padding: 17px;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer__social {
+    display: flex;
+    gap: 16px;
+}
